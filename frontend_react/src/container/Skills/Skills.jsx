@@ -1,5 +1,5 @@
 import React from 'react';
-
+import AppWrap from '../../wrapper/AppWrap';
 import './Skills.scss';
 
 export const Skills = () => {
@@ -8,4 +8,4 @@ export const Skills = () => {
   )
 }
 
-export default Skills
+export default AppWrap(Skills, "skills");
