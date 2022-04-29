@@ -16,12 +16,12 @@ export default {
       },
       {
         name: 'projectLink',
-        title: 'Project Link',
+        title: 'Project Link (Must include https://)',
         type: 'string',
       },
       {
         name: 'codeLink',
-        title: 'Code Link',
+        title: 'Code Link (Must include https://)',
         type: 'string',
       },
       {
