@@ -7,4 +7,5 @@ export const Testimonial = () => {
     <div>Testimonial</div>
   )
 }
-export default AppWrap(Testimonial, "testimonial");
+export default AppWrap(Testimonial, 'testimonial');
+
