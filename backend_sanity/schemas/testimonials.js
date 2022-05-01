@@ -1,5 +1,5 @@
 export default {
-    name: 'tesyimonials',
+    name: 'testimonials',
     title: "Testimonials",
     type: "document",
     fields: [
@@ -16,7 +16,7 @@ export default {
     },
 
     {   
-        name: 'imageurl',
+        name: 'imgurl',
         title: 'ImgURL',
         type: 'image',
         options: {
