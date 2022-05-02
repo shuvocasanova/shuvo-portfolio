@@ -9,9 +9,10 @@ function About() {
   const [abouts, setAbouts] = useState([]);
   useEffect(() => {
     const query = '*[_type == "abouts"]';
+    
     client.fetch(query).then((data) => {setAbouts(data)});
+    
   }, []);
-  
   return (
     <>
     <h2 className='head-text'>I know that <span>Good Development</span><br/>Means <span>Good Business</span></h2>

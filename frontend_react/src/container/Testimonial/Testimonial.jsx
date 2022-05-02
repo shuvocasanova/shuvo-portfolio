@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
-import ReactTooltip from 'react-tooltip';
 import { motion } from 'framer-motion';
 import { urlFor, client} from '../../client';
 import AppWrap from '../../wrapper/AppWrap';
@@ -11,6 +10,7 @@ export const Testimonial = () => {
   const [brands, setBrands] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
 
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
@@ -33,7 +33,6 @@ export const Testimonial = () => {
   }
 
   const test = testimonials[currentIndex];
-  
   return (
     <>
       {testimonials.length && (
