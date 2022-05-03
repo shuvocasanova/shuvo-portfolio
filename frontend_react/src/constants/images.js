@@ -36,6 +36,7 @@ import skype from '../assets/skype.png';
 import skypeSmall from '../assets/skypeSmall.png';
 import whatsApp from '../assets/whatsApp.png'
 import spotify from '../assets/spotify.png';
+import Shuvo from '../assets/Shuvo.pdf';
 
 // eslint-disable-next-line
 export default {
@@ -73,5 +74,6 @@ export default {
   skype,
   spotify,
   skypeSmall,
-  whatsApp
+  whatsApp,
+  Shuvo
 };

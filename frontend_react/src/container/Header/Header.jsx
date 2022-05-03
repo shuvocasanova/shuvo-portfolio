@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { urlFor, client } from "../../../src/client";
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import Pdf from '../../assets/Shuvo.pdf';
 import './Header.scss';
 import AppWrap from '../../wrapper/AppWrap';
 
@@ -46,6 +47,12 @@ export const Header = () => {
               <p className='p-text'>Email Marketer</p>
               <p className='p-text'>Freelancer</p>
               
+            </div>
+            <div className='badge-cmp2 app__flex' > 
+              <div style={{marginLeft: 10}}>
+                {/* <h1 className='head-text'><a href = {Pdf} target = "_blank"/>Resume</h1> */}
+                <a className='head-text' href = {Pdf} target = "_blank" style={{textDecoration: 0}}>Resume</a>
+              </div>
             </div>
           </div>
         </motion.div>
