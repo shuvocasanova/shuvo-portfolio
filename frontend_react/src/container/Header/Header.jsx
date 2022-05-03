@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
+import { urlFor, client } from "../../../src/client";
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import './Header.scss';
 import AppWrap from '../../wrapper/AppWrap';
 
 export const Header = () => {
+  const [profileImage, setProfileImage] = useState();
+
+  useEffect(() => {
+    const query = '*[_type == "profileImage"]';
+    
+    client.fetch(query)
+      .then((data) => {
+        setProfileImage(data);
+      })
+  }, [])
+  
   const scaleVariants = {
     whileInView:{
       scale: [0,1],
@@ -31,7 +43,9 @@ export const Header = () => {
             </div>
             <div className='tag-cmp app__flex'>
               <p className='p-text'>Web Developer</p>
+              <p className='p-text'>Email Marketer</p>
               <p className='p-text'>Freelancer</p>
+              
             </div>
           </div>
         </motion.div>
@@ -41,7 +55,7 @@ export const Header = () => {
         transition={{duration: 0.7, delayChildren: 0.5}}
         className="app__header-img"
         >
-          <img src={images.profile} alt="profile_bg" />
+          {profileImage?.map((image, index) => <img src={urlFor(image.imgUrl)} alt={image.name} key={index} />)}
           <motion.img
           whileInView={{scale: [0, 1]}}
           transition={{duration: 1, ease: 'easeInOut'}}
@@ -56,7 +70,7 @@ export const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
         >
-          {[images.flutter, images.redux, images.sass].map((circle, index) => (
+          {[images.javascript, images.react, images.css].map((circle, index) => (
             <div className='circle-cmp app__flex' key={`circle-index`}>
               <img src={circle} alt='circle'/>
             </div>

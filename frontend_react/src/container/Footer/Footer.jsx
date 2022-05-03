@@ -58,6 +58,14 @@ function Footer() {
           <img src={images.mobile} alt="mobile" />
           <a href='tel:+8801767057140' className='p-text'>+8801767057140</a>
         </div>
+        <div className='app__footer-card'>
+          <img src={images.skypeSmall} alt="mobile" />
+          <a href='https://join.skype.com/invite/hcqDbREiDfPX' target="_blank" className='p-text'>Send a message on Skype</a>
+        </div>
+        <div className='app__footer-card'>
+          <img src={images.whatsApp} alt="mobile" />
+          <a href="https://api.whatsapp.com/send/?phone=01767057140&text&app_absent=0" target="_blank" className='p-text'>Send a message on WhatsApp</a>
+        </div>
      </div>
 
     {!isFormSubmitted ?
