@@ -13,7 +13,7 @@ import workExperience from './workExperience'
 import works from './works';
 import abouts from './abouts';
 import profileImage from './profileImage'
-import social from './social'
+import social from './social';
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema

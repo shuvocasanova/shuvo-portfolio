@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter, BsInstagram, BsSkype } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import {client} from '../client';
 
@@ -34,6 +34,9 @@ const SocialMedia = () => {
                 </div>
                 <div>
                     <a href={social.instagram} target="_blank" rel='noreferrer' ><BsInstagram /></a>
+                </div>
+                <div>
+                    <a href={social.skype} target="_blank" rel='noreferrer' ><BsSkype /></a>
                 </div>
         </div>
          ))

@@ -33,6 +33,8 @@ import asus from '../assets/asus.png';
 import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
+import skypeSmall from '../assets/skypeSmall.png';
+import whatsApp from '../assets/whatsApp.png'
 import spotify from '../assets/spotify.png';
 
 // eslint-disable-next-line
@@ -70,4 +72,6 @@ export default {
   nb,
   skype,
   spotify,
+  skypeSmall,
+  whatsApp
 };

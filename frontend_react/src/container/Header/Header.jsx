@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Profiler} from 'react';
+import React, { useState, useEffect} from 'react';
 import { urlFor, client } from "../../../src/client";
 import { motion } from 'framer-motion';
 import { images } from '../../constants';

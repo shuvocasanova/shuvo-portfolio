@@ -33,5 +33,10 @@ export default{
             title:'Instagram (Must include https://)',
             type:'string'
         },
+        {
+            name:'skype',
+            title:'Skype (Must include https://)',
+            type:'string'
+        },
     ]
 }
